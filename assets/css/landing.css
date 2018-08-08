@@ -1,0 +1,1281 @@
+*{
+    margin  : 0;
+    padding : 0;
+    border: 0;
+    outline: 0;
+    /* vertical-align: baseline; */
+    background: transparent;
+    font-size: 100%;
+}
+
+body{
+    background-color: #f3f3f3;
+    display: grid;
+    max-height: 300vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "container1"
+        "container2"
+        "container3";
+    /* grid-row-gap: 0; */
+}
+
+.container1{
+    grid-area: container1;
+    background: url("../img/spacetech.png") no-repeat;
+    /* background-position: center; */
+    background-size: 100% 100%;
+    overflow-y: hidden;
+    /* background-position-x: -5px; */
+    /* background-position-y: 185px; */
+    height: 100vh;
+    width: 100%;
+    min-height: 600px;
+   
+}
+    .logoContainer{
+        /* grid-area: logoContainer; */
+        display: flex;
+        justify-content: left;
+        text-align: center;
+    
+    }
+
+    .mainLogo{
+        width: 65px;
+        height: 65px;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    .logoContainer h1{
+        font-family: trajan-pro-3, serif;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 42px;   
+        color: #95989A;
+        padding-top: 20px;
+        padding-left: 2px;   
+        
+    }
+
+    .logoContainer p{
+        font-family: Segoe UI, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;   
+        color: #95989A;      
+        position: absolute;
+        padding: 60px 0 0 12%;
+    }
+
+    .mainMenu {
+        margin-top: 50px;
+
+    }
+    ul {
+        list-style: none;
+    }
+
+    li {
+        padding:5px;
+    }
+
+.container1Content{
+    grid-area: container1Content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f3f3f3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "one one"
+        "two two"
+        "buttonOne buttonTwo"
+    ; 
+    grid-row-gap: 0%;
+    position: absolute;
+    padding-top: 0;
+    padding-left: 30%;
+    justify-items: center;  
+
+}
+
+.one {
+   grid-area: one;
+   font-size: 45px;
+   color: #E4EF50;
+   font-weight: bold;
+   
+
+}
+.two {
+    grid-area: two;    
+   font-size: 25px;
+   color: #ffff;
+   font-weight: 400;
+   position: absolute;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+}
+.buttonOne {
+    grid-area: buttonOne;
+    padding: 10px 70px ;
+    color: #f3f3f3;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #4AAAEE;
+    position: absolute;
+    margin-top: 80px;
+    margin-right: 10px;
+    font-size: 18px;
+
+}
+
+.buttonTwo {
+    grid-area: buttonTwo;
+    padding: 10px 80px ;
+    color: #f3f3f3;
+    display: inline-block;
+    border-radius: 50px;
+    margin-left: -100px;
+    background-color: #4AAAEE;
+    position: absolute;
+    margin-top: 80px;
+    font-size: 19px;
+}
+
+
+.container2{
+    grid-area: container2;
+    background: url("../img/grouptechhands.png") no-repeat;
+    /* background-position: center; */
+    background-size: 100% 100%;
+    overflow-y: hidden;
+    /* background-position-x: -5px; */
+    /* background-position-y: 185px; */
+    height: 100vh;
+    width: 100%;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+        "containerHeading containerHeading ."
+        "containercontent containercontent containercontent"
+        ". joinButton ."
+    ;
+}
+
+.containerHeading {
+    grid-area: containerHeading;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    color: #F5F5F5;
+    text-align: center;
+    padding-top: 90px;
+
+}
+
+.containercontent { 
+    grid-area: containercontent;
+    padding-left: 20%;
+    list-style: none;    
+}
+
+.containercontent li h2 {
+    color: #E4EF50;
+    font-size: 35px;
+
+}
+
+.containercontent li article {
+    color: #f5f5f5;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+.joinButton {
+    grid-area: joinButton;
+    padding: 4px 1px ;
+    color: #ffffff;
+    /* display: inline-block; */
+    border-radius: 50px;
+    background-color: #E4EF50;
+    max-height: 50px;
+    font-size: 18px;
+    /* position: absolute; */
+    margin-top: 20px;
+}
+
+
+
+.container3{
+    grid-area: container3;
+    background-color: #454848;
+    /* background-position: center; */
+    overflow-y: hidden;
+    /* background-position-x: -5px; */
+    /* background-position-y: 185px; */
+    height: 100vh;
+    width: 100%;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+        "block1 block1 block1"
+        "block2 block3 block4"
+        "block5 block5 block5"
+    ;
+    justify-content: space-between;
+}
+
+.block1{
+    grid-area: block1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    /* max-height: 100px; */
+    margin-top: 50px;
+}
+
+.block1 img{
+    width: 55px;
+    height: 55px;
+}
+
+.block1 h1{
+    font-family: trajan-pro-3, serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;   
+    color: #95989A;
+    padding-top: 20px;
+    padding-left: 1%;    
+}
+
+.block1 p{
+    font-family: Segoe UI, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;   
+    color: #95989A;      
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 8%;
+    
+}
+
+.block1 blockquote{
+    color: #95989A;      
+    position: absolute;
+    font-size: 10px;
+    padding: 65px 0 0 8%;
+}
+
+
+
+
+.block2{
+    grid-area: block2;
+    /* padding: 50px 70px; */
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+
+.block2 h5{
+    color: #f5e6e6;
+    font-size: 18px;
+}
+
+.block2 ul {
+    list-style: none;
+}
+
+.block2 ul li a{
+    text-decoration: none;
+    color: #95989A;
+}
+
+
+
+.block3{
+    grid-area: block3;
+    /* padding: 50px 50px; */
+    margin-top: 50px;
+    /* margin-left: 75px; */
+    text-align: center;
+    /* max-width: 300px; */
+    
+}
+
+
+.block3 h5{
+    color: #f5e6e6;
+    font-size: 18px;
+}
+
+.block3 ul {
+    list-style: none;
+
+}
+
+
+.block3 ul li {
+    display: inline-block;
+}
+
+.block3 ul li a{
+    text-decoration: none;
+    color: #95989A;
+}
+
+.block4{
+    grid-area: block4;
+    /* padding: 50px 50px; */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.block4 h5{
+    color: #f5e6e6;
+    font-size: 18px;
+
+}
+
+.block4 p {
+    color: #95989A;
+    font-size: 12px;
+}
+
+.block4 ul{
+    list-style: none;
+    margin-top: -10px;
+}
+
+.block4 ul li {
+    display: inline-block;
+}
+
+.block4 ul li a {
+    text-decoration: none;
+    color: #95989A;
+}
+
+
+
+.block5{
+    grid-area: block5;
+    color: #95989A;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-end;
+}
+
+.block5 blockquote {
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .mainLogo{
+        width: 50px;
+        height: 50px;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    .logoContainer h1{
+        font-family: trajan-pro-3, serif;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 30px;   
+        color: #95989A;
+        padding-top: 20px;
+        padding-left: 2px;   
+        
+    }
+
+    .logoContainer p{
+        font-family: Segoe UI, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;   
+        color: #95989A;      
+        position: absolute;
+        padding: 50px 0 0 13%;
+    }
+
+        .mainMenu {
+            margin-top: 50px;
+    
+        }
+        ul {
+            list-style: none;
+        }
+    
+        li {
+            padding:5px;
+        }
+
+    .container1Content{
+        grid-area: container1Content;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f3f3f3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "one one"
+            "two two"
+            "buttonOne buttonTwo"
+            "buttonTwo buttonTwo"
+        ; 
+        grid-row-gap: 0%;
+        position: absolute;
+        /* padding-top: 18%; */
+        padding-left: 30%;
+        justify-items: center;  
+    
+    }
+    
+    .one {
+       grid-area: one;
+       font-size: 30px;
+       color: #E4EF50;
+       font-weight: bold;
+       
+    
+    }
+    .two {
+        grid-area: two;    
+       font-size: 20px;
+       color: #ffff;
+       font-weight: 400;
+       position: absolute;
+       text-align: center;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    
+    }
+    .buttonOne {
+        grid-area: buttonOne;
+        padding: 10px 30px;
+        color: #f3f3f3;
+        display: inline-block;
+        border-radius: 50px;
+        background-color: #4AAAEE;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 100%;
+        width: 100%;
+        /* margin-right: 5px; */
+        font-size: 15px;
+        justify-items: center;
+    
+    }
+    
+    .buttonTwo {
+        grid-area: buttonTwo;
+        padding: 10px 30px ;
+        color: #f3f3f3;
+        display: inline-block;
+        border-radius: 50px;
+        width: 100%;
+        margin-left: -100%;
+        background-color: #4AAAEE;
+        position: absolute;
+        margin-top: 80%;
+        font-size: 15px;
+    }
+    
+
+}
+
+
+@media (max-width: 800px) {
+    .container1{
+        grid-area: container1;
+        background: url("../img/spacetechresponsive.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        overflow-y: hidden;
+        /* background-position-x: -5px; */
+        /* background-position-y: 185px; */
+        height: 100vh;
+        width: 100%;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "logoContainer logoContainer"
+            "mainMenu container1Content"
+    
+        ; */
+    }
+    .mainLogo{
+        width: 50px;
+        height: 50px;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    .logoContainer h1{
+        font-family: trajan-pro-3, serif;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 30px;   
+        color: #95989A;
+        padding-top: 20px;
+        padding-left: 3px;   
+        
+    }
+
+    .logoContainer p{
+        font-family: Segoe UI, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;   
+        color: #95989A;      
+        position: absolute;
+        padding: 50px 0 0 13%;
+    }
+
+    .mainMenu{
+        /* grid-area: mainMenu; */
+        /* position: absolute; */
+        /* padding-top: -100px; */
+        margin-top: 10px;
+        padding-left: 5px;
+        /* justify-content: space-between; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:  18px;
+        color: #4AAAEE;
+    }
+
+    
+    .mainMenu li{
+        /* list-style: none; */
+        display: inline-block;
+        /* padding: 10px 10px 10px 10px; */
+        /* margin-top: -150px; */
+        /* text-align: center; */
+        
+    }
+    
+    .mainMenu li a{
+        text-decoration: none;
+    }
+    
+    .container1Content{
+        grid-area: container1Content;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f3f3f3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "one one"
+            "two two"
+            "buttonOne buttonTwo"
+            "buttonTwo buttonTwo"
+        ; 
+        grid-row-gap: 0%;
+        /* position: absolute; */
+        padding-top: 10%;
+        padding-left: 10%;
+        justify-items: center;  
+    
+    }
+    
+    .one {
+       grid-area: one;
+       font-size: 30px;
+       color: #E4EF50;
+       font-weight: bold;
+       
+    
+    }
+    .two {
+        grid-area: two;    
+       font-size: 20px;
+       color: #ffff;
+       font-weight: 400;
+       position: absolute;
+       text-align: center;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    
+    }
+    .buttonOne {
+        grid-area: buttonOne;
+        padding: 10px 30px;
+        color: #f3f3f3;
+        display: inline-block;
+        border-radius: 50px;
+        background-color: #4AAAEE;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 100%;
+        width: 100%;
+        /* margin-right: 5px; */
+        font-size: 15px;
+        justify-items: center;
+    
+    }
+    
+    .buttonTwo {
+        grid-area: buttonTwo;
+        padding: 10px 30px ;
+        color: #f3f3f3;
+        display: inline-block;
+        border-radius: 50px;
+        width: 100%;
+        margin-left: -100%;
+        background-color: #4AAAEE;
+        position: absolute;
+        margin-top: 80%;
+        font-size: 15px;
+    }
+
+    .containerHeading {
+        grid-area: containerHeading;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        color: #F5F5F5;
+        text-align: center;
+        padding-top: 90px;
+    
+    }
+
+    .containercontent { 
+        grid-area: containercontent;
+        padding-left: 20%;
+        list-style: none;    
+    }
+    
+    .containercontent li h2 {
+        color: #E4EF50;
+        font-size: 25px;
+    
+    }
+    
+    .containercontent li article {
+        color: #f5f5f5;
+        padding-left: 5%;
+        font-size: 18px;
+    }
+    
+    .joinButton {
+        grid-area: joinButton;
+        padding: 4px 1px ;
+        color: #ffffff;
+        /* display: inline-block; */
+        border-radius: 50px;
+        background-color: #E4EF50;
+        max-height: 50px;
+        font-size: 15px;
+        /* position: absolute; */
+        margin-top: 20px;
+    }
+    
+    
+
+}
+
+
+@media (max-width: 544px) {
+    .container1{
+        grid-area: container1;
+        background: url("../img/spacetechresponsive.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        overflow-y: hidden;
+        /* background-position-x: -5px; */
+        /* background-position-y: 185px; */
+        height: 100vh;
+        width: 100%;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "logoContainer logoContainer"
+            "mainMenu container1Content"
+    
+        ; */
+    }
+    .mainLogo{
+        width: 50px;
+        height: 50px;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    .logoContainer h1{
+        font-family: trajan-pro-3, serif;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 30px;   
+        color: #95989A;
+        padding-top: 20px;
+        /* padding-left: 1%;    */
+        
+    }
+
+    .logoContainer p{
+        font-family: Segoe UI, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;   
+        color: #95989A;      
+        position: absolute;
+        padding: 50px 0 0 25%;
+    }
+
+    .mainMenu{
+        /* grid-area: mainMenu;
+        position: absolute; */
+        padding-top: 10px;
+        padding-left: 10px;
+        justify-content: space-between;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:  15px;
+        color: #4AAAEE;
+    }
+
+    
+    .mainMenu li{
+        list-style: none;
+        display: inline-block;
+        /* padding: 10px 10px 10px 10px; */
+        margin-top: -150px;
+        text-align: center;
+        
+    }
+    
+    .mainMenu li a{
+        text-decoration: none;
+    }
+    
+    .container1Content{
+        grid-area: container1Content;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f3f3f3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "one one"
+            "two two"
+            "buttonOne buttonTwo"
+            "buttonTwo buttonTwo"
+        ; 
+        grid-row-gap: 0%;
+        position: absolute;
+        padding-top: 20%;
+        padding-left: 10%;
+        justify-items: center;  
+    
+    }
+    
+    .one {
+       grid-area: one;
+       font-size: 22px;
+       color: #E4EF50;
+       font-weight: bold;
+       
+    
+    }
+    .two {
+        grid-area: two;    
+       font-size: 18px;
+       color: #ffff;
+       /* font-weight: 400; */
+       position: absolute;
+       text-align: center;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    
+    }
+    .buttonOne {
+        grid-area: buttonOne;
+        padding: 10px 30px;
+        color: #f3f3f3;
+        display: inline-block;
+        border-radius: 50px;
+        background-color: #4AAAEE;
+        position: absolute;
+        margin-top: 50%;
+        margin-left: 100%;
+        width: 100%;
+        /* margin-right: 5px; */
+        font-size: 15px;
+        justify-items: center;
+    
+    }
+    
+    .buttonTwo {
+        grid-area: buttonTwo;
+        padding: 10px 30px ;
+        color: #f3f3f3;
+        display: inline-block;
+        border-radius: 50px;
+        width: 100%;
+        margin-left: -100%;
+        background-color: #4AAAEE;
+        position: absolute;
+        margin-top: 90%;
+        font-size: 15px;
+    }
+
+    .containerHeading {
+        grid-area: containerHeading;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        color: #F5F5F5;
+        text-align: center;
+        padding-top: 50px;
+    
+    }
+
+    .containercontent { 
+        grid-area: containercontent;
+        padding-left: 20%;
+        list-style: none;    
+    }
+    
+    .containercontent li h2 {
+        color: #E4EF50;
+        font-size: 25px;
+    
+    }
+    
+    .containercontent li article {
+        color: #f5f5f5;
+        padding-left: 5%;
+        font-size: 18px;
+    }
+    
+    .joinButton {
+        grid-area: joinButton;
+        padding: 4px 1px ;
+        color: #ffffff;
+        /* display: inline-block; */
+        border-radius: 50px;
+        background-color: #E4EF50;
+        max-height: 50px;
+        font-size: 15px;
+        /* position: absolute; */
+        margin-top: 20px;
+    }
+    .block2 h5{
+        color: #f5e6e6;
+        font-size: 15px;
+    
+    }
+    .block3 h5{
+        color: #f5e6e6;
+        font-size: 15px;
+    
+    }
+    .block4 h5{
+        color: #f5e6e6;
+        font-size: 15px;
+    
+    }
+    
+    .block4 p {
+        color: #95989A;
+        font-size: 12px;
+    }
+
+
+}
+
+@media (max-width: 365px) {
+    .container1{
+        grid-area: container1;
+        background: url("../img/spacetechresponsive.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        overflow-y: hidden;
+        /* background-position-x: -5px; */
+        /* background-position-y: 185px; */
+        height: 100vh;
+        width: 100%;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "logoContainer logoContainer"
+            "mainMenu container1Content"
+    
+        ; */
+    }
+    .mainLogo{
+        width: 40px;
+        height: 40px;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    .logoContainer h1{
+        font-family: trajan-pro-3, serif;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 20px;   
+        color: #95989A;
+        padding-top: 20px;
+        padding-left: 3px;   
+        
+    }
+
+    .logoContainer p{
+        font-family: Segoe UI, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;   
+        color: #95989A;      
+        position: absolute;
+        padding: 40px 0 0 22%;
+    }
+
+    .mainMenu{
+        padding-top: 10px;
+        padding-left: 10px;
+        /* justify-content: space-between; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:  13px;
+        color: #4AAAEE;
+    }
+
+    
+    .mainMenu li{
+        list-style: none;
+        display: inline-block;
+        /* padding: 10px 10px 10px 10px; */
+        /* margin-top: -150px; */
+        text-align: center;
+        
+    }
+    
+    .mainMenu li a{
+        text-decoration: none;
+    }
+    
+    .container1Content{
+        grid-area: container1Content;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f3f3f3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "one one"
+            "two two"
+            "buttonOne buttonTwo"
+            "buttonTwo buttonTwo"
+        ; 
+        grid-row-gap: 0%;
+        position: absolute;
+        padding-top: 30%;
+        padding-left: 10%;
+        justify-items: center;  
+    
+    }
+    
+    .one {
+       grid-area: one;
+       font-size: 25px;
+       text-align: center;
+       color: #E4EF50;
+       font-weight: bold;
+       
+    
+    }
+    .two {
+        grid-area: two;    
+       font-size: 20px;
+       text-align: center;
+       color: #ffff;
+       /* font-weight: 400; */
+       position: absolute;
+       text-align: center;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    
+    }
+    .buttonOne {
+        grid-area: buttonOne;
+        padding: 10px 30px;
+        color: #f3f3f3;
+        display: inline-block;
+        border-radius: 50px;
+        background-color: #4AAAEE;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 100%;
+        width: 100%;
+        /* margin-right: 5px; */
+        font-size: 12px;
+        justify-items: center;
+    
+    }
+    
+    .buttonTwo {
+        grid-area: buttonTwo;
+        padding: 10px 30px ;
+        color: #f3f3f3;
+        display: inline-block;
+        border-radius: 50px;
+        width: 100%;
+        margin-left: -100%;
+        background-color: #4AAAEE;
+        position: absolute;
+        margin-top: 150px;
+        font-size: 12px;
+    }
+
+    .containerHeading {
+        grid-area: containerHeading;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        color: #F5F5F5;
+        text-align: center;
+        padding-top: 30px;
+    
+    }
+
+    .containercontent { 
+        grid-area: containercontent;
+        padding-left: 20%;
+        list-style: none;    
+    }
+    
+    .containercontent li h2 {
+        color: #E4EF50;
+        font-size: 25px;
+    
+    }
+    
+    .containercontent li article {
+        color: #f5f5f5;
+        padding-left: 5%;
+        font-size: 18px;
+    }
+    
+    .joinButton {
+        grid-area: joinButton;
+
+        /* padding: 4px 1px ; */
+        color: #ffffff;
+        /* display: inline-block; */
+        border-radius: 20px;
+        background-color: #E4EF50;
+        /* max-height: 50px; */
+        font-size: 12px;
+        /* position: absolute; */
+        margin-top: 10px;
+    }
+
+
+    
+.container3{
+    grid-area: container3;
+    background-color: #454848;
+    /* background-position: center; */
+    overflow-y: hidden;
+    /* background-position-x: -5px; */
+    /* background-position-y: 185px; */
+    height: 100vh;
+    width: 100%;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+        "block1 block1 block1"
+        "block2 block2 block2"
+        "block3 block3 block3"
+        "block4 block4 block4"
+        "block5 block5 block5"
+
+    ;
+    justify-content: space-between;
+}
+
+.block1{
+    grid-area: block1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    /* max-height: 100px; */
+    margin-top: 50px;
+}
+
+.block1 img{
+    width: 55px;
+    height: 55px;
+}
+
+.block1 h1{
+    font-family: trajan-pro-3, serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;   
+    color: #95989A;
+    padding-top: 20px;
+    padding-left: 3px;    
+}
+
+.block1 p{
+    font-family: Segoe UI, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;   
+    color: #95989A;      
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 28%;
+    
+}
+
+.block1 blockquote{
+    color: #95989A;      
+    position: absolute;
+    font-size: 8px;
+    padding: 55px 0 0 28%;
+}
+
+
+
+
+.block2{
+    grid-area: block2;
+    /* padding: 50px 70px; */
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+
+.block2 h5{
+    color: #f5e6e6;
+    font-size: 13px;
+}
+
+.block2 ul {
+    list-style: none;
+}
+
+.block2 ul li a{
+    text-decoration: none;
+    color: #95989A;
+}
+
+
+
+.block3{
+    grid-area: block3;
+    /* padding: 50px 50px; */
+    margin-top: 50px;
+    /* margin-left: 75px; */
+    text-align: center;
+    /* max-width: 300px; */
+    
+}
+
+
+.block3 h5{
+    color: #f5e6e6;
+    font-size: 13px;
+}
+
+.block3 ul {
+    list-style: none;
+
+}
+
+
+.block3 ul li {
+    display: inline-block;
+}
+
+.block3 ul li a{
+    text-decoration: none;
+    color: #95989A;
+}
+/* 
+.block3 ul li a i{
+    font-size: 20px;
+} */
+
+
+.block4{
+    grid-area: block4;
+    /* padding: 50px 50px; */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.block4 h5{
+    color: #f5e6e6;
+    font-size: 13px;
+
+}
+
+.block4 p {
+    color: #95989A;
+    font-size: 12px;
+}
+
+.block4 ul{
+    list-style: none;
+    margin-top: -10px;
+}
+
+.block4 ul li {
+    display: inline-block;
+}
+
+.block4 ul li a {
+    text-decoration: none;
+    color: #95989A;
+}
+
+
+
+.block5{
+    grid-area: block5;
+    color: #95989A;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-end;
+}
+
+.block5 blockquote {
+    text-align: center;
+}
+
+
+}
+
+
+
+

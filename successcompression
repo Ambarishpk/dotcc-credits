@@ -1,0 +1,19 @@
+
+    require_once("assets/lib/Tinify/Exception.php");
+    require_once("assets/lib/Tinify/ResultMeta.php");
+    require_once("assets/lib/Tinify/Result.php");
+    require_once("assets/lib/Tinify/Source.php");
+    require_once("assets/lib/Tinify/Client.php");
+    require_once("assets/lib/Tinify.php");
+    \Tinify\setKey("T4YFCfgyr7n6I2SGQGUM977ge6akawlH");
+    // \Tinify\setProxy("http://192.168.0.1:8080");
+
+
+    $target_dir = "./upload/img/";
+
+    $target_file = $target_dir . basename($_FILES["image"]["name"]);
+
+    $source = \Tinify\fromFile($_FILES["image"]["tmp_name"]);
+    $source1 =  $source->toFile($_FILES["image"]["tmp_name"]);
+
+    $path=$_FILES["image"]["name"];

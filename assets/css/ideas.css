@@ -1,0 +1,15 @@
+#ideacontainer {
+    background-image: url("../img/ideabg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:600px;
+    -moz-box-shadow:inset 4px 8px 75px #000000;
+-webkit-box-shadow:inset 4px 8px 75px #000000;
+box-shadow:inset 4px 8px 75px #000000;
+}
+
+.ideaheading {
+    color:#ffff; font-weight:bold; font-size:25px; padding:5% 5px 5px 5px;
+
+}

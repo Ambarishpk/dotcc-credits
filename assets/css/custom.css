@@ -1,0 +1,65 @@
+
+
+#profileul {
+    list-style: none;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: #FFF;
+    padding: 5px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#profileul li a{
+    text-decoration: none;
+    color: #FFF;
+    text-align: left;
+    background-color: #BCB8C2;
+    padding: 10px 16px;
+    border-radius: 2px;
+    opacity: 0.8;
+    font-size: 16px;
+    display: inline-block;
+    margin: 4px;
+    line-height: 1;
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+#profileul li a.active{
+    background-color: #F05283;
+    pointer-events: none;
+}
+
+#profileul li a:hover {
+    opacity: 1;
+}
+
+
+#profileul li{
+    display: inline-block;
+}
+
+
+.main-content{
+    margin-bottom: 75px;
+}
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+/* -- Link to Tutorialzine -- */
+
+.tz-link{
+	text-decoration: none;
+	color: #fff !important;
+	font: bold 36px Arial,Helvetica,sans-serif !important;
+}
+
+.tz-link span{
+	color: #da431c;
+}
